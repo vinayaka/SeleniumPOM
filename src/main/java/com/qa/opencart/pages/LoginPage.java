@@ -35,7 +35,7 @@ public class LoginPage {
 	public String getLoginPageTitle() {
 		String title =eleutil.waitForTitleToBe(AppConstants.LOGIN_PAGE_TITLE, TimeUtil.DEFAULT_TIME);
 		
-		System.out.println("Login Page Title:"+title);
+		System.out.println("Login Page Title Displayed:"+title);
 		return title;
 	}
 	@Step("Enter the URL")
