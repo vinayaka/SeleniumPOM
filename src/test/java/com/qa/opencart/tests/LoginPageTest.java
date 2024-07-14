@@ -28,7 +28,7 @@ import io.qameta.allure.Story;
 @Issue("Login 123")
 @Listeners({ExtentReportListener.class,TestAllureListener.class})
 public class LoginPageTest extends BaseTest {
-	@Description("Checking Login Page Title..")
+	@Description("Checking Login Page Title Sucess..")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	
@@ -43,7 +43,7 @@ public class LoginPageTest extends BaseTest {
 		String actURL = loginpage.getLoginPageURL();
 		Assert.assertTrue(actURL.contains(AppConstants.LOGIN_PAGE_FRACTION_URL), AppError.URL_NOT_FOUND);
 	}
-	@Description("Checking Login forgetPwdLinkExist..")
+	@Description("Checking Login forgetPwdLinkExist Sucess..")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(priority = 3)
 	public void forgetPwdLinkExist() {
