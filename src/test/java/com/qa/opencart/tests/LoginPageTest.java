@@ -36,14 +36,14 @@ public class LoginPageTest extends BaseTest {
 		String accttitle = loginpage.getLoginPageTitle();
 		Assert.assertEquals(accttitle, AppConstants.LOGIN_PAGE_TITLE, AppError.TITLE_NOT_FOUND);
 	}
-	@Description("Checking Login PageURl..")
+	@Description("Checking Login Page URl..")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 2)
 	public void logingPageURl() {
 		String actURL = loginpage.getLoginPageURL();
 		Assert.assertTrue(actURL.contains(AppConstants.LOGIN_PAGE_FRACTION_URL), AppError.URL_NOT_FOUND);
 	}
-	@Description("Checking Login forgetPwdLinkExist Sucess..")
+	@Description("Checking Login forget Pwd LinkExist Sucess..")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(priority = 3)
 	public void forgetPwdLinkExist() {
